@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": null,
+      "type": "mssql.local",
+      "connectionId": "StudentsConnectionString",
+      "dynamicId": null
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql2": {
+      "secretStore": "LocalSecretsFile",
+      "type": "mssql.local",
+      "connectionId": "StudentsDBConnectionString",
+      "dynamicId": null
+    }
+  }
+}

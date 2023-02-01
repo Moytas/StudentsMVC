@@ -1,0 +1,12 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    DBControl db = new DBControl();
+    int id = ViewBag.ID;
+
+    Student s = db.GetStudent(id);
+
+    <p>@s.Name</p>
+    <p>@s.LastName</p>
+}
